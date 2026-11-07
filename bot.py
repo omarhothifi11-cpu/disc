@@ -13,7 +13,7 @@ except ImportError:
     print("[-] Missing 'davey' library! Run: pip install davey aiohttp websockets")
     raise SystemExit(1)
 
-TOKEN = "ODcyOTA3OTgxODEyMDE1MTM0.G0R9OC.onix6AaGusdghtdP7g8Mg53MhJHv9PeFPb1PzY"
+TOKEN = input("Enter discord token account: ").strip()
 CHANNEL_ID = input("Enter Voice Channel (Room) ID: ").strip()
 
 MAIN_GATEWAY = "wss://gateway.discord.gg/?v=10&encoding=json"
